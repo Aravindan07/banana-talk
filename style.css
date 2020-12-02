@@ -88,16 +88,20 @@ textarea {
 footer {
   background-color: #496ddb;
   width: 100%;
-  min-height: 50px;
+  min-height: 60px;
   color: #ffffff;
   position: relative;
-  /* left: 0;
-  bottom: 0; */
   margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 0;
+}
+
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  footer {
+    min-height: 50px;
+  }
 }
 
 .footer-wrap {
