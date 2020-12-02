@@ -38,7 +38,7 @@ h1 {
 }
 
 textarea {
-  width: 80%;
+  width: 60%;
   height: 20vh;
   padding: 1rem;
   margin: 0rem auto;
@@ -85,9 +85,42 @@ textarea {
 footer {
   background-color: #496ddb;
   width: 100%;
-  height: 50px;
+  height: 70px;
   color: #ffffff;
-  position: absolute;
-  bottom: 0px;
-  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.footer-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.first-img {
+  margin-left: 2rem;
+}
+
+.contact .img-wrap {
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.contact img {
+  height: 20px;
+  width: 20px;
+  margin-right: 1rem;
+  cursor: pointer;
 }
