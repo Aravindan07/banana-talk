@@ -16,7 +16,7 @@ function buttonClicked(){
   .then(data => {
     output.innerText = data.contents.translated;
   })
-  .catch(error => console.log(error))
+  .catch(error => alert("An error has occurred.Please try again later!"))
 }
 
 btnTranslate.addEventListener('click', buttonClicked);
