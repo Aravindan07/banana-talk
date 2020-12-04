@@ -8,11 +8,13 @@ function getServerURL(text){
 
 function buttonClicked(){
   var inputValue = txtInput.value;
+  if(inputValue.length <= 0){
+    return alert('Please type something to get a translated text');
+  }
   fetch(getServerURL(inputValue))
   .then(response => response.json())
   .then(data => {
     output.innerText = data.contents.translated;
-    console.log(data.contents.translated);
   })
   .catch(error => console.log(error))
 }
